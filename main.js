@@ -133,3 +133,8 @@ let remove=fruits.splice(pos,1)
 console.log(pos)
 console.log(remove)
 console.log(fruits)
+
+// loops through array
+fruits.forEach(function(item){
+    console.log(item)
+})
