@@ -172,3 +172,7 @@ const square =(base ,exponent)=>{
 }
 
 console.log(square(2,10))
+
+// default parameter
+const sub=(a=4,b=2)=> (a-b)
+console.log(sub())
