@@ -111,30 +111,64 @@
 // }
 
 // arrays
-let fruits= ["najuu","najax","najma"]
-console.log(fruits[2])
+// let fruits= ["najuu","najax","najma"]
+// console.log(fruits[2])
 
-// adding back 
-fruits.push("yaah")
-console.log(fruits)
-// remove back
-fruits.pop()
-console.log(fruits)
-// adding front
-fruits.unshift("new element")
-console.log(fruits)
-// remve front
-fruits.shift()
-console.log(fruits)
+// // adding back 
+// fruits.push("yaah")
+// console.log(fruits)
+// // remove back
+// fruits.pop()
+// console.log(fruits)
+// // adding front
+// fruits.unshift("new element")
+// console.log(fruits)
+// // remve front
+// fruits.shift()
+// console.log(fruits)
 
-// when you want to remove specific array 
-let pos=fruits.indexOf("najax")
-let remove=fruits.splice(pos,1)
-console.log(pos)
-console.log(remove)
-console.log(fruits)
+// // when you want to remove specific array 
+// let pos=fruits.indexOf("najax")
+// let remove=fruits.splice(pos,1)
+// console.log(pos)
+// console.log(remove)
+// console.log(fruits)
 
-// loops through array
-fruits.forEach(function(item){
-    console.log(item)
-})
+// // loops through array
+// fruits.forEach(function(item){
+//     console.log(item)
+// })
+
+
+// Functions
+// function definition/function declaration
+// function square(num){
+//     return num*num
+// }
+// // function calling
+// console.log(square(4))
+
+// function expression
+// const square=function(num){
+//     return num*num
+// }
+// console.log(square(4))
+
+// Arrow functions
+// const square= (num) => num*num
+// console.log(square(5))
+
+// const add =(num1,num2)=>{
+//     return num1+num2
+// } 
+
+const square =(base ,exponent)=>{
+    let result=1;
+    for(i=0; i<exponent;i++){
+    result*=base;
+}
+    return result
+
+}
+
+console.log(square(2,10))
